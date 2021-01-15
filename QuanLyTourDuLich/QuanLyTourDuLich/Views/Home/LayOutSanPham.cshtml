@@ -1,0 +1,10 @@
+﻿@using QuanLyTourDuLich.Models
+@model GioHang
+@if (Model == null)
+{
+    <label style="color:white">0</label>
+}
+else
+{
+    <label style="color:white">@Model.SoMatHang()</label>
+}

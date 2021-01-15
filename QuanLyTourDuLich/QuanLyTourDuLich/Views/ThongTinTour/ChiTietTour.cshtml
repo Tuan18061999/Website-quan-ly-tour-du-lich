@@ -1,0 +1,116 @@
+﻿@using QuanLyTourDuLich.Models;
+@model TOUR
+@{
+    ViewBag.Title = "ChiTietTour";
+    Layout = "~/Views/_LayoutChung.cshtml";
+    TOUR tour = Model;
+    List<ChiTietPhuongTien> lstPhuongTien = ViewBag.lstPhuongTien;
+    List<DiaDiemThamQuan> lstThamQuan = ViewBag.lstThamQuan;
+    List<ChiTietDichVu> lstDichVu = ViewBag.lstDichVu;
+    List<TOUR> lstTourCungLoaiRandom = ViewBag.lstTourCungLoaiRandom;
+    List<DanhGia> lstTopDanhGia = ViewBag.lstTopDanhGia;
+}
+
+<div class="container">
+    <div class="row mt-4">
+        <h4 class="ml-3">@tour.TenTour</h4><br />
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="~/Content/AnhDoAn/@tour.HinhAnhTour" class="w-100"/>
+        </div>
+        <div class="col-md-6">
+            <h5>PHƯƠNG TIỆN</h5>
+            <ul>
+                @foreach (ChiTietPhuongTien ctpt in lstPhuongTien)
+                {
+                    <li>Di chuyển bằng :@ctpt.PHUONGTIEN.TenPhuongTien</li>
+                }
+            </ul>
+            <h5>THỜI GIAN KHỨ HỒI</h5>
+            <ul>
+                <li>Ngày đi :@String.Format("{0:dd/MM/yyyy}", tour.NgayBatDau)</li>
+                <li>Ngày về :@String.Format("{0:dd/MM/yyyy}", tour.NgayKetThuc)</li>
+            </ul>
+            <h5>Giới thiệu</h5>
+            <p>@tour.MoTaTour</p>
+            <a style="margin-left:100px;" href="@Url.Action("ThemTour", "DatTour", new { maTour = tour.MaSoTour })"><img src="~/Content/AnhDoAn/btnDatTour.png" /></a>
+        </div>
+    </div>
+    <h4 class="mt-2">CHƯƠNG TRÌNH TOUR</h4>
+    <div class="row ml-1">
+        
+        @foreach (DiaDiemThamQuan ddtq in lstThamQuan)
+        {
+            <h6>@ddtq.TenDiaDiem</h6>
+            <p>@ddtq.MoTaDiaDiem</p>
+            if (ddtq.HinhAnhDiaDiem != null)
+            {
+            <img src="~/Content/AnhDoAn/@ddtq.HinhAnhDiaDiem" />
+            }
+        }
+    </div>
+    <h4 class="mt-2">DỊCH VỤ</h4>
+    <h6>Giá tour bao gồm :</h6>
+    <div class ="row ml-1">
+        <ul>
+            @foreach (ChiTietDichVu ctdv in lstDichVu)
+            {
+                if (ctdv.DuocHuong == 1)
+                {
+                    <li>@ctdv.DichVu.TenDichVu</li>
+                }
+            }
+        </ul>
+    </div>
+    <h6>Giá tour không bao gồm :</h6>
+    <div class ="row ml-1">    
+        <ul>
+            @foreach (ChiTietDichVu ctdv in lstDichVu)
+            {
+                if (ctdv.DuocHuong == 0)
+                {
+                    <li>@ctdv.DichVu.TenDichVu</li>
+                }
+            }
+        </ul>
+    </div>
+    <h4>Tour cùng loại</h4>
+    <div class="row">
+        @foreach (TOUR tourClRd in lstTourCungLoaiRandom)
+        {
+            <div class="col-md-4">
+                <div class="card w-100">
+                    <a href="@Url.Action("ChiTietTour","ThongTinTour",new { id = @tourClRd.MaSoTour })" class="card-img-top"><img src="~/Content/AnhDoAn/@tourClRd.HinhAnhTour"/ style="width:100%; height:210px;"></a>
+                    <div class="card-body">
+                        @*<h6 class="card-title">@tourClRd.TenTour</h6>*@
+                        <h6>@Html.ActionLink(@tourClRd.TenTour, "ChiTietTour", "ThongTinTour", new { id = @tourClRd.MaSoTour }, new { @class = "card-title" })</h6>
+                    </div>
+                    <div class="card-footer">
+                        <p style="float:left">@String.Format("{0:#,###}",tourClRd.Gia) VNĐ</p>
+                        @Html.ActionLink("Xem chi tiết ==>", "ChiTietTour", "ThongTinTour", new { id = @tourClRd.MaSoTour }, new { @class = "ml-5" })
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    <h4>Tour nổi bật</h4>
+    <div class="row">
+        @foreach (DanhGia dg in lstTopDanhGia)
+        {
+            <div class="col-md-4">
+                <div class="card w-100">
+                    <a href="@Url.Action("ChiTietTour","ThongTinTour",new { id = @dg.MaSoTour })" class="card-img-top"><img src="~/Content/AnhDoAn/@dg.TOUR.HinhAnhTour"/ style="width:100%; height:210px;"></a>
+                    <div class="card-body">
+                        @*<h6 class="card-title">@dg.TOUR.TenTour</h6>*@
+                        <h6>@Html.ActionLink(@dg.TOUR.TenTour, "ChiTietTour", "ThongTinTour", new { id = @dg.TOUR.MaSoTour }, new { @class = "card-title" })</h6>
+                    </div>
+                    <div class="card-footer">
+                        <p style="float:left">@String.Format("{0:#,###}",dg.TOUR.Gia) VNĐ</p>
+                        @Html.ActionLink("Xem chi tiết ==>", "ChiTietTour", "ThongTinTour", new { id = @dg.TOUR.MaSoTour }, new { @class = "ml-5" })
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

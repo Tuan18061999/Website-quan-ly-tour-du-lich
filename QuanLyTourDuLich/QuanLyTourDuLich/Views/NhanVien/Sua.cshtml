@@ -1,0 +1,33 @@
+﻿@using QuanLyTourDuLich.Models;
+@model NhanVien
+@{
+    ViewBag.Title = "Sua";
+    Layout = "~/Views/_LayoutChung.cshtml";
+    NhanVien nv = Model;
+}
+
+<div class="container">
+    <div class="row mt-3">
+        <h3>Điều chỉnh thông tin nhân viên</h3>
+    </div>
+    <div class="row">
+        <form action="/NhanVien/Sua" method="post" class="form-group" enctype="multipart/form-data">
+            @*<label>Mã Số Nhân Viên</label>
+            <input type="text" name="MaSoNhanVien" value="@nv.MaSoNhanVien" class="form-control"/>*@
+            <label>Tên Nhân Viên</label>
+            <input type="text" name="TenNhanVien" value="@nv.TenNhanVien" class="form-control"/>
+            <label>Ngày Sinh</label>
+            <input type="date" name="NgaySinh" value="@ViewBag.ngaySinh" class="form-control"/>
+            <label>Giới Tính</label>
+            <input type="text" name="GioiTinh" value="@nv.GioiTinh" class="form-control"/>
+            <label>Địa Chỉ</label>
+            <input type="text" name="DiaChi" value="@nv.DiaChi" class="form-control"/>
+            <label>Số Điện Thoại</label>
+            <input type="text" name="SoDienThoai" value="@nv.SoDienThoai" class="form-control"/>
+            <label>chức vụ</label><br />
+            @Html.DropDownList("MaSoChucVu",ViewBag.lstChucVu as SelectList,nv.ChucVu.TenChucVu)<br />
+
+            <input type="submit" value="Sửa" class="mt-2"/>
+        </form>
+    </div>
+</div>

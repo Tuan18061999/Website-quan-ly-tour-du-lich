@@ -1,0 +1,41 @@
+﻿@using QuanLyTourDuLich.Models
+@model TOUR
+@{
+    ViewBag.Title = "Sua";
+    Layout = "~/Views/_LayoutChung.cshtml";
+    TOUR tour = Model;
+}
+
+<div class="container">
+    <div class="row mt-3">
+        <h3>ĐIỀU CHỈNH THÔNG TIN TOUR</h3>
+    </div>
+    <div class="row">
+        <form action="/TienIch/Sua" method="post" class="form-group" enctype="multipart/form-data">
+            <label>Mã tour</label>
+            <input type="text" name="MaSoTour" value="@tour.MaSoTour" class="form-control" readonly="true"/>
+            <label>Tên tour</label>
+            <input type="text" name="TenTour" value="@tour.TenTour" class="form-control"/>
+            <label>Ngày đi</label>
+            <input type="date" name="NgayBatDau" value="@ViewBag.ngayDi" class="form-control" />
+            <label>Ngày về</label>
+            <input type="date" name="NgayKetThuc" value="@ViewBag.ngayVe" class="form-control"/>
+            <label>Mô tả</label>
+            <textarea name="MoTaTour" class="form-control" rows="5">@tour.MoTaTour</textarea>
+            <label>Hình ảnh</label><br />
+            <p>Bạn phải check vào đây trước khi muốn đổi ảnh. Nếu không mặc định sẽ lấy ảnh cũ</p>
+            <input type="checkbox" name="chkAnh" value="1"/>Tôi muốn thay đổi ảnh<br />
+            <input type="file" name="fileUpload"/>
+            @ViewBag.ThongBao<br />
+            <label>Giá</label>
+            <input type="text" name="Gia" value="@tour.Gia" class="form-control" placeholder="Giá"/>
+            <label>Loại tour</label><br />
+            @Html.DropDownList("MaLoaiTour", ViewBag.lstLoaiTour as SelectList,tour.LoaiTour)<br />
+            <label>Địa phương</label><br />
+            @Html.DropDownList("MaSoTinh", ViewBag.lstTinh as SelectList,tour.MaSoTinh)<br /><br />
+
+            <input type="submit" value="Sửa thông tin"/>
+        </form>
+    </div>
+</div>
+

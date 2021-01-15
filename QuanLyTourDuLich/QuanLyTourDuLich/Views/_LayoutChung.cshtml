@@ -1,0 +1,164 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="cointainer-fluid" >
+        <div class="row pt-3" style="background-color:#154054; height:70px;">
+            <div class="col-md-3">
+                <a href="@Url.Action("TrangChu","Home")"><img src="~/Content/AnhDoAn/logo.png"/ style="width:50%; margin-left:100px;"></a>   
+            </div>
+            <div class="col-md-6">
+                <form action="/TienIch/TimKiem" method="post">
+                    <div class="input-group mb-2 mr-sm-2">
+                        <input type="text" class="form-control" name="txtName" placeholder="Chọn nơi muốn đến">
+                        <div class="input-group-prepend">
+                            <input type="submit" class="input-group-text" value="Tìm kiếm">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-3">
+                @Html.ActionLink("Đăng ký", "DangKy", "TaiKhoan") / @Html.ActionLink("Đăng nhập", "DangNhap", "TaiKhoan")
+                <a class="ml-2" href="@Url.Action("XemGioHang", "DatTour")"><img src="~/Content/AnhDoAn/anhGioHang.jpg" style="width:30px; height:50px;"/></a>
+                (@Html.Action("LayOutSanPham", "Home"))
+                (@Html.Action("LayOutUser", "Home"))
+            </div>
+        </div>
+        <div class="row pl-5 border-top border-primary" style="background-color:#154054; position:relative">
+            <div class="col-md-9">
+                <a class="nav-link active" href="@Url.Action("TrangChu","Home")"style="color:white; float:left">Trang chủ</a>
+                <div class="dropdown" style="float:left">
+                    <a class="nav-link" style="color:white" data-toggle="dropdown" href="#">Tour trong nước<span class="caret mr-3"></span></a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+		                @Html.Action("DanhMucTourTrongNuoc", "Home");
+	                </ul>
+                </div>
+                <div class="dropdown" style="float:left">
+                    <a class="nav-link" style="color:white" data-toggle="dropdown" href="#">Tour ngoài nước<span class="caret mr-3"></span></a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+		                @Html.Action("DanhMucTourNgoaiNuoc", "Home");
+	                </ul>
+                </div>
+                <a class="nav-link" href="@Url.Action("TimKiemNangCao","TienIch")" style="color:white; float:left">Tìm kiếm nâng cao</a>
+                <a class="nav-link" href="#"style="color:white; float:left">Tin tức</a>
+                <a class="nav-link" href="#" style="color:white;float:left"">Liên hệ</a>
+
+                @*<ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link active" href="@Url.Action("TrangChu","Home")"style="color:white">Trang chủ</a>
+                </li>
+                <li class="nav-item drop-down">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"  id="navbardrop"style="color:white;">Giới thiệu</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#" style="color:white">Cẩm nang du lịch</a>
+                        <a class="dropdown-item" href="#"style="color:white">Kinh nghiệm du lịch</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"style="color:white">Tour du lịch</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"style="color:white">Tin tức</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color:white">Liên hệ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("TimKiemNangCao","TienIch")" style="color:white">Tìm kiếm nâng cao</a>
+                </li>
+                <div class="dropdown" style="float:left">
+                    <a class="nav-link" style="color:white" data-toggle="dropdown" href="#">Hihi<span class="caret mr-3"></span></a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+		                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Hho</a></li>
+	                </ul>
+                </div>
+            </ul>*@
+            </div>
+            <div class="col-md-3">
+                @Html.Action("LayOutLink", "Home")
+            </div>
+        </div>
+        <div class="row">
+            @RenderBody()
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>LIÊN HỆ</h4>
+                    <p><span style="font-weight:bold">Địa chỉ</span>: Thành phố Hồ Chí Minh</p>
+                    <p><span style="font-weight:bold">Điện thoại</span>: 0387016317</p>
+                    <p><span style="font-weight:bold">Email</span>: nguyenductuan620@gmail.com</p>
+                    <p><span style="font-weight:bold">Giờ làm việc</span>: Từ thứ 2 đến thứ 7</p>
+                </div>
+                <div class="col-md-3">
+                    <h6>KẾT NỐI VỚI CHÚNG TÔI</h6>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img src="~/Content/AnhDoAn/logoWifi.png" />
+                        </div>
+                        <div class="col-md-2">
+                            <img src="~/Content/AnhDoAn/logoTwister.png" />
+                        </div>
+                        <div class="col-md-2">
+                            <img src="~/Content/AnhDoAn/logoWifi.png" />
+                        </div>
+                        <div class="col-md-2">
+                            <img src="~/Content/AnhDoAn/logoFacebook.png" />
+                        </div>
+                        <div class="col-md-2">
+                            <img src="~/Content/AnhDoAn/logoTwister.png" />
+                        </div>
+                        <div class="col-md-2">
+                            <img src="~/Content/AnhDoAn/logoWifi.png" />
+                        </div>
+                    </div>
+                    <h6>CHẤP NHẬN THANH TOÁN</h6>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="~/Content/AnhDoAn/logoPay.png" />
+                        </div>
+                        <div class="col-md-3">
+                            <img src="~/Content/AnhDoAn/logoJCB.png" />
+                        </div>
+                        <div class="col-md-3">
+                            <img src="~/Content/AnhDoAn/logoCard.png" />
+                        </div>
+                        <div class="col-md-3">
+                            <img src="~/Content/AnhDoAn/logoViSa.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <h4 class="text-center">Trong nước</h4>
+                    @Html.Action("DanhMucTourTrongNuoc", "Home");
+                </div>
+                <div class="col-md-2">
+                    <h4 class="text-center">Ngoài nước</h4>
+                    @Html.Action("DanhMucTourNgoaiNuoc", "Home");
+                </div>
+                <div class="col-md-2">
+                    <h4 class="text-center">Thông tin</h4>
+                    <ul style="list-style-type:none">
+                        <li>Tin tức</li>
+                        <li>Tạp chí du lịch</li>
+                        <li>Cẩm nang du lịch</li>
+                        <li>Kinh nghiệm du lịch</li>
+                        <li>Liên hệ</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+   @* <script src="~/Content/bootstrap/js/jquery-3.3.1.min.js"></script>*@
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="~/Content/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

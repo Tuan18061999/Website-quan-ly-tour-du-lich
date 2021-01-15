@@ -1,0 +1,8 @@
+﻿@using QuanLyTourDuLich.Models
+@model List<TOUR>
+<ul style="list-style-type:none">
+    @foreach (TOUR item in Model)
+    {
+        <li><a role="menuitem" tabindex="-1" href="@Url.Action("TourTheoTinh","TienIch",new{maTinh=item.Tinh.MaSoTinh})">@item.Tinh.TenTinh</a></li>
+    }
+</ul>

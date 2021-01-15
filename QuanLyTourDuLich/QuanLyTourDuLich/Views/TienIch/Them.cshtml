@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Them";
+    Layout = "~/Views/_LayoutChung.cshtml";
+}
+
+<div class="container">
+    <div class="row mt-3">
+        <h3>THÊM MỘT TOUR MỚI</h3>
+    </div>
+    <div class="row">
+        <form action="/TienIch/Them" method="post" class="form-group" enctype="multipart/form-data">
+            <label>Tên tour</label>
+            <input type="text" name="TenTour" placeholder="Tên" class="form-control"/>
+            <label>Ngày đi</label>
+            <input type="date" name="NgayBatDau" class="form-control"/>
+            <label>Ngày về</label>
+            <input type="date" name="NgayKetThuc" class="form-control"/>
+            <label>Mô tả</label>
+            <textarea name="MoTaTour" placeholder="Viết mô tả ở đây" class="form-control" rows="5"></textarea>
+            <label>Hình ảnh</label><br />
+            <input type="file" name="fileUpload"/>
+            @ViewBag.ThongBao<br />
+            <label>Giá</label>
+            <input type="text" name="Gia" class="form-control" placeholder="Giá"/>
+            <label>Loại tour</label><br />
+            @Html.DropDownList("MaLoaiTour", ViewBag.lstLoaiTour as SelectList)<br />
+            <label>Địa phương</label><br />
+            @Html.DropDownList("MaSoTinh", ViewBag.lstTinh as SelectList)<br /><br />
+
+            <input type="submit" value="Thêm mới"/>
+        </form>
+    </div>
+</div>

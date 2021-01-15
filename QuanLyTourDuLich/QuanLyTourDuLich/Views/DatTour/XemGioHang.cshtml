@@ -1,0 +1,52 @@
+﻿@using QuanLyTourDuLich.Models
+@model GioHang
+@{
+    ViewBag.Title = "XemGioHang";
+    Layout = "~/Views/_LayoutChung.cshtml";
+}
+@if(Model!=null)
+{
+<div class="container">
+    <h2>Thông tin giỏ hàng đã chọn</h2>
+<table class ="table">
+    <tr>
+        <th>Mã tour</th>
+        <th>Tên tour</th>
+        <th>Ảnh</th>
+        <th>Số lượng</th>
+        <th>Đơn giá</th>
+        <th>Thành tiền</th>
+        <th></th>
+        <th></th>
+    </tr>
+    @foreach (CartItem item in Model.lst)
+    {
+        <tr>
+            <td>@item.iMaTour</td>
+            <td>@item.sTenTour</td>
+            <td><img style="width:100px; height:100px;" src="~/Content/AnhDoAn/@item.sHinhAnhTour" /></td>
+            <td>@item.iSoLuong</td>
+            <td>@String.Format("{0:#,###}",item.dGia) VNĐ</td>
+            <td>@String.Format("{0:#,###}",item.ThanhTien) VNĐ</td>
+            <td>@Html.ActionLink("Chi tiết", "ChiTietTour", "ThongTinTour", new { id = @item.iMaTour }, null)</td> 
+            <td>@Html.ActionLink("Xóa", "XoaTour", "DatTour", new { MaTour = @item.iMaTour }, null)</td>
+        </tr>
+    }
+    <tr>
+        <td>@Html.ActionLink("Đặt hàng", "XacNhanDatTour", "DatTour", new { @class = "btn btn-primary" })</td>
+    </tr>
+</table>
+</div>
+}else{
+    <div class="container">
+        <div class="row">
+            <h3>GIỎ HÀNG TRỐNG</h3>
+        </div>
+    </div>
+}
+
+
+
+
+<script src="~/Content/bootstrap/js/GioHang.js"></script>
+

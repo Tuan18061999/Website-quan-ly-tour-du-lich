@@ -1,0 +1,54 @@
+﻿@using QuanLyTourDuLich.Models
+@model List<DiaDiemThamQuan>
+@{
+    ViewBag.Title = "KeHoach";
+    Layout = "~/Views/_LayoutChung.cshtml";
+    List<DiaDiemThamQuan> lstDiaDiem = Model;
+}
+
+<div class="container">
+    <div class="row">
+    </div>
+    <div class="row">
+        <div class="col-md-1">
+            <label>Mã số địa điểm</label>
+        </div>
+        <div class="col-md-3">
+            <label>Tên địa điểm</label>
+        </div>
+        <div class="col-md-4">
+            <label>Mô tả địa điểm</label>
+        </div>
+        <div class="col-md-4">
+            <label>Hình ảnh địa điểm</label>
+        </div>
+        
+    </div>
+    @foreach (DiaDiemThamQuan item in lstDiaDiem)
+    {
+        <div class="row">
+        <div class="col-md-1">
+            <label>@item.MaSoDiaDiem</label>
+        </div>
+        <div class="col-md-3">
+            <label>@item.TenDiaDiem</label>
+        </div>
+        <div class="col-md-4">
+            <label>@item.MoTaDiaDiem</label>
+        </div>
+        <div class="col-md-4">
+            @{
+                if (item.HinhAnhDiaDiem == null)
+                {
+                    <img class="w-100" src="~/Content/AnhDoAn/a0.jpg" />
+                }
+                else
+                {
+                    <img class="w-100" src="~/Content/AnhDoAn/@item.HinhAnhDiaDiem" />
+                }
+            }   
+        </div>
+    </div>
+    }
+</div>
+

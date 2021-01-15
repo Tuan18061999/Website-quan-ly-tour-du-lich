@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/_LayoutChung.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <h3>TRANG CHỦ ADMIN</h3>
+    </div>
+    <div class="row">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Chức năng</th>
+                    <th>Mô tả</th>
+                    <th>Bấm vào đây</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Quản trị tour du lịch</td>
+                    <td>Cho phép Admin thực hiện các thao tác thêm, xóa sửa cho web site</td>
+                    <td><a href="/TienIch/DanhSachTour">Click me</a></td>
+                </tr>
+                <tr>
+                    <td>Quản trị nhân viên</td>
+                    <td>Cho phép Admin thực hiện các thao tác thêm, xóa sửa thông tin của nhân viên trong doanh nghiệp</td>
+                    <td><a href="/NhanVien/DanhSachNhanVien">Click me</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

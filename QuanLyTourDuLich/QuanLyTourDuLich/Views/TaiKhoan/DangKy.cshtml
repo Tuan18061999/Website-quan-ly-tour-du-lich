@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "DangKy";
+    Layout = "~/Views/_LayoutChung.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <h3 style="text-align:center; color:yellow">ĐĂNG KÝ TÀI KHOẢN</h3>
+    </div>
+    <div class="row">
+        <div class="login-page">
+    
+  <div class="form">
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary(true)
+            <form class="register-form">
+                <label>Họ và tên</label>    
+                <input type="text" placeholder="Họ và tên" name="Hoten" class="form-control"/>
+                <label>Tên đăng nhập</label>   
+                <input type="text" placeholder="Tên đăng nhập" name="TenDN" class="form-control"/>
+                <label>Mật khẩu</label>
+                <input type="password" placeholder="Mật khẩu" name="Password" class="form-control"/>
+                <label>Giới tính</label>
+                <input type="text" placeholder="Giới tính" name="GioiTinh" class="form-control"/>
+                <label>Số chứng minh thư</label>
+                <input type="text" placeholder="Số chứng minh thư" name="Sochungminh" class="form-control"/>
+                <label>Địa chỉ</label>
+                <input type="text" placeholder="Địa chỉ" name="Diachi" class="form-control"/>
+                <label>Điện thoại</label>
+                <input type="text" placeholder="Điện thoại" name="Dienthoai" class="form-control"/>
+                 
+                <button class="mt-3">Create</button><br />
+            <p class="message">Đã có tài khoản? @Html.ActionLink("Đăng nhập tại đây","DangNhap","TaiKhoan")</p>
+        </form>
+    }     
+      <p style="text-align:center">@Html.ActionLink("Quay về trang chủ","TrangChu","Home")</p>
+  </div>
+  </div>
+    </div>
+</div>
+
+ 

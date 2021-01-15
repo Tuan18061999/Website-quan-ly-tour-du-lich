@@ -1,0 +1,124 @@
+E:\HK1_Nam4\Công nghệ Web\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\QuanLyTourDuLich.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\QuanLyTourDuLich.pdb
+E:\HK1_Nam4\Công nghệ Web\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\Antlr3.Runtime.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\EntityFramework.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\Microsoft.Web.Infrastructure.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\Newtonsoft.Json.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Net.Http.Formatting.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.Http.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.Http.WebHost.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.Mvc.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.Optimization.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.Providers.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.Razor.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.WebPages.Deployment.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.WebPages.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.WebPages.Razor.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\WebGrease.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\EntityFramework.xml
+E:\HK1_Nam4\Công nghệ Web\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\Newtonsoft.Json.xml
+E:\HK1_Nam4\Công nghệ Web\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Net.Http.Formatting.xml
+E:\HK1_Nam4\Công nghệ Web\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.Http.xml
+E:\HK1_Nam4\Công nghệ Web\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.Http.WebHost.xml
+E:\HK1_Nam4\Công nghệ Web\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.Mvc.xml
+E:\HK1_Nam4\Công nghệ Web\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.Razor.xml
+E:\HK1_Nam4\Công nghệ Web\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.WebPages.xml
+E:\HK1_Nam4\Công nghệ Web\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.WebPages.Deployment.xml
+E:\HK1_Nam4\Công nghệ Web\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.WebPages.Razor.xml
+E:\HK1_Nam4\Công nghệ Web\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\obj\Debug\QuanLyTourDuLich.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\obj\Debug\QuanLyTourDuLich.pdb
+E:\HK1_Nam4\Công nghệ Web\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\obj\Debug\QuanLyTourDuLich.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\QuanLyTourDuLich.dll
+C:\Users\Admin\Desktop\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\QuanLyTourDuLich.pdb
+C:\Users\Admin\Desktop\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\Antlr3.Runtime.dll
+C:\Users\Admin\Desktop\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\EntityFramework.dll
+C:\Users\Admin\Desktop\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Admin\Desktop\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Admin\Desktop\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\Newtonsoft.Json.dll
+C:\Users\Admin\Desktop\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Net.Http.Formatting.dll
+C:\Users\Admin\Desktop\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.Http.dll
+C:\Users\Admin\Desktop\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.Http.WebHost.dll
+C:\Users\Admin\Desktop\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.Mvc.dll
+C:\Users\Admin\Desktop\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.Optimization.dll
+C:\Users\Admin\Desktop\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.Providers.dll
+C:\Users\Admin\Desktop\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.Razor.dll
+C:\Users\Admin\Desktop\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Admin\Desktop\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.WebPages.dll
+C:\Users\Admin\Desktop\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.WebPages.Razor.dll
+C:\Users\Admin\Desktop\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\WebGrease.dll
+C:\Users\Admin\Desktop\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\EntityFramework.xml
+C:\Users\Admin\Desktop\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\Newtonsoft.Json.xml
+C:\Users\Admin\Desktop\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Net.Http.Formatting.xml
+C:\Users\Admin\Desktop\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.Http.xml
+C:\Users\Admin\Desktop\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.Http.WebHost.xml
+C:\Users\Admin\Desktop\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.Mvc.xml
+C:\Users\Admin\Desktop\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.Razor.xml
+C:\Users\Admin\Desktop\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.WebPages.xml
+C:\Users\Admin\Desktop\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Admin\Desktop\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.WebPages.Razor.xml
+C:\Users\Admin\Desktop\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\obj\Debug\QuanLyTourDuLich.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\obj\Debug\QuanLyTourDuLich.dll
+C:\Users\Admin\Desktop\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\obj\Debug\QuanLyTourDuLich.pdb
+E:\HK1_Nam4\Công nghệ Web\DoAn_Hai\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\QuanLyTourDuLich.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn_Hai\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\QuanLyTourDuLich.pdb
+E:\HK1_Nam4\Công nghệ Web\DoAn_Hai\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\Antlr3.Runtime.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn_Hai\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\EntityFramework.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn_Hai\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\Microsoft.Web.Infrastructure.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn_Hai\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn_Hai\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\Newtonsoft.Json.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn_Hai\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Net.Http.Formatting.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn_Hai\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.Http.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn_Hai\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.Http.WebHost.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn_Hai\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.Mvc.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn_Hai\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.Optimization.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn_Hai\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.Providers.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn_Hai\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.Razor.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn_Hai\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.WebPages.Deployment.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn_Hai\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.WebPages.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn_Hai\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.WebPages.Razor.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn_Hai\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\WebGrease.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn_Hai\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\EntityFramework.xml
+E:\HK1_Nam4\Công nghệ Web\DoAn_Hai\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\Newtonsoft.Json.xml
+E:\HK1_Nam4\Công nghệ Web\DoAn_Hai\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Net.Http.Formatting.xml
+E:\HK1_Nam4\Công nghệ Web\DoAn_Hai\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.Http.xml
+E:\HK1_Nam4\Công nghệ Web\DoAn_Hai\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.Http.WebHost.xml
+E:\HK1_Nam4\Công nghệ Web\DoAn_Hai\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.Mvc.xml
+E:\HK1_Nam4\Công nghệ Web\DoAn_Hai\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.Razor.xml
+E:\HK1_Nam4\Công nghệ Web\DoAn_Hai\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.WebPages.xml
+E:\HK1_Nam4\Công nghệ Web\DoAn_Hai\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.WebPages.Deployment.xml
+E:\HK1_Nam4\Công nghệ Web\DoAn_Hai\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.WebPages.Razor.xml
+E:\HK1_Nam4\Công nghệ Web\DoAn_Hai\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\obj\Debug\QuanLyTourDuLich.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn_Hai\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\obj\Debug\QuanLyTourDuLich.pdb
+E:\HK1_Nam4\Công nghệ Web\DoAn_Hai\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\obj\Debug\QuanLyTourDuLich.csprojResolveAssemblyReference.cache
+E:\HK1_Nam4\Công nghệ Web\DoAn\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\QuanLyTourDuLich.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\QuanLyTourDuLich.pdb
+E:\HK1_Nam4\Công nghệ Web\DoAn\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\Antlr3.Runtime.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\EntityFramework.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\Microsoft.Web.Infrastructure.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\Newtonsoft.Json.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Net.Http.Formatting.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.Http.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.Http.WebHost.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.Mvc.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.Optimization.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.Providers.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.Razor.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.WebPages.Deployment.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.WebPages.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.WebPages.Razor.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\WebGrease.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\EntityFramework.xml
+E:\HK1_Nam4\Công nghệ Web\DoAn\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\Newtonsoft.Json.xml
+E:\HK1_Nam4\Công nghệ Web\DoAn\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Net.Http.Formatting.xml
+E:\HK1_Nam4\Công nghệ Web\DoAn\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.Http.xml
+E:\HK1_Nam4\Công nghệ Web\DoAn\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.Http.WebHost.xml
+E:\HK1_Nam4\Công nghệ Web\DoAn\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.Mvc.xml
+E:\HK1_Nam4\Công nghệ Web\DoAn\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.Razor.xml
+E:\HK1_Nam4\Công nghệ Web\DoAn\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.WebPages.xml
+E:\HK1_Nam4\Công nghệ Web\DoAn\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.WebPages.Deployment.xml
+E:\HK1_Nam4\Công nghệ Web\DoAn\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\bin\System.Web.WebPages.Razor.xml
+E:\HK1_Nam4\Công nghệ Web\DoAn\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\obj\Debug\QuanLyTourDuLich.dll
+E:\HK1_Nam4\Công nghệ Web\DoAn\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\obj\Debug\QuanLyTourDuLich.pdb
+E:\HK1_Nam4\Công nghệ Web\DoAn\DoAn\QuanLyTourDuLich\QuanLyTourDuLich\obj\Debug\QuanLyTourDuLich.csprojResolveAssemblyReference.cache

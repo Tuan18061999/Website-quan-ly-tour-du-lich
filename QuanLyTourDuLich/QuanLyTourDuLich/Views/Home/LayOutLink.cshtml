@@ -1,0 +1,15 @@
+﻿@using QuanLyTourDuLich.Models
+@model TaiKhoan
+
+@if (Model == null)
+{
+    <label style="color:white"></label>
+}
+else if (Model.MaSoNV == null)
+{
+    <label style="color:white"></label>
+}
+else
+{
+    @Html.ActionLink("Tới trang quản trị =>", "Index", "Admin");
+}

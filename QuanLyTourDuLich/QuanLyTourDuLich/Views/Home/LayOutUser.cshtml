@@ -1,0 +1,11 @@
+﻿@using QuanLyTourDuLich.Models
+@model TaiKhoan
+
+@if (Model == null)
+{
+    <label style="color:white">Hello</label>
+}
+else
+{
+    <label style="color:white">@Model.TenDangNhap</label>
+}

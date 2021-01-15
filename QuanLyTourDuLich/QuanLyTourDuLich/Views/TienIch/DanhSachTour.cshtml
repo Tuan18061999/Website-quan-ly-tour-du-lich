@@ -1,0 +1,77 @@
+﻿@using QuanLyTourDuLich.Models
+@model List<TOUR>
+@{
+    ViewBag.Title = "DanhSachTour";
+    Layout = "~/Views/_LayoutChung.cshtml";
+    List<TOUR> lstTour = Model;
+}
+
+<div class="container">
+    <div class="row">
+        @Html.ActionLink("Thêm tour mới","Them","TienIch")<br /><br />
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <label>Tên tour</label>
+        </div>
+        <div class="col-md-1">
+            <label>Ngày đi</label>
+        </div>
+        <div class="col-md-1">
+            <label>Ngày về</label>
+        </div>
+        <div class="col-md-2">
+            <label>Mô tả</label>
+        </div>
+        <div class="col-md-2">
+            <label>Hình ảnh</label>
+        </div>
+        <div class="col-md-1">
+            <label>Giá</label>
+        </div>
+        <div class="col-md-1">
+            <label>Loại tour</label>
+        </div>
+        <div class="col-md-1">
+            <label>Tỉnh</label>
+        </div>
+        <div class="col-md-1">
+            <label>Tùy chỉnh</label>
+        </div>
+    </div>
+    @foreach (TOUR item in lstTour)
+    {
+        <div class="row">
+        <div class="col-md-2">
+            <label>@item.TenTour</label>
+        </div>
+        <div class="col-md-1">
+            <label>@String.Format("{0:dd/MM/yyyy}", item.NgayBatDau)</label>
+        </div>
+        <div class="col-md-1">
+            <label>@String.Format("{0:dd/MM/yyyy}", item.NgayKetThuc)</label>
+        </div>
+        <div class="col-md-2">
+            <label>@item.MoTaTour</label>
+        </div>
+        <div class="col-md-2">
+            <img class="w-100" src="~/Content/AnhDoAn/@item.HinhAnhTour" />
+        </div>
+        <div class="col-md-1">
+            <label>@String.Format("{0:#,###}",item.Gia) VNĐ</label>
+        </div>
+        <div class="col-md-1">
+            <label>@item.LoaiTour.TenLoai</label>
+        </div>
+        <div class="col-md-1">
+            <label>@item.Tinh.TenTinh</label>
+        </div>
+        <div class="col-md-1">
+            @Html.ActionLink("Kế hoạch","KeHoach","TienIch", new { id = item.MaSoTour }, null)<br />
+            @Html.ActionLink("Xóa", "Xoa", "TienIch", new { id = item.MaSoTour }, null)<br />
+            @Html.ActionLink("Sửa", "Sua", "TienIch", new { id = item.MaSoTour }, null)<br />
+             @Html.ActionLink("Chi tiết", "ChiTietTour", "ThongTinTour", new { id = item.MaSoTour }, null)<br />
+        </div>
+    </div>
+    }
+</div>

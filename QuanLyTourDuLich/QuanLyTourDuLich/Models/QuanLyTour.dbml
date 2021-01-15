@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QL_TOUR" Class="QuanLyTourDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.;Initial Catalog=QL_TOUR;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="QL_TOURConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ChiTietDatHang" Member="ChiTietDatHangs">
+    <Type Name="ChiTietDatHang">
+      <Column Name="MaSoTour" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaDatHang" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ThanhTien" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SoLuongVe" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="TOUR_ChiTietDatHang" Member="TOUR" ThisKey="MaSoTour" OtherKey="MaSoTour" Type="TOUR" IsForeignKey="true" />
+      <Association Name="DatHang_ChiTietDatHang" Member="DatHang" ThisKey="MaDatHang" OtherKey="MaDatHang" Type="DatHang" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TOUR" Member="TOURs">
+    <Type Name="TOUR">
+      <Column Name="MaSoTour" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenTour" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="NgayBatDau" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="NgayKetThuc" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="MoTaTour" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="HinhAnhTour" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="Gia" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="MaLoaiTour" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaSoTinh" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="TOUR_ChiTietDatHang" Member="ChiTietDatHangs" ThisKey="MaSoTour" OtherKey="MaSoTour" Type="ChiTietDatHang" />
+      <Association Name="TOUR_ChiTietDichVu" Member="ChiTietDichVus" ThisKey="MaSoTour" OtherKey="MaSoTour" Type="ChiTietDichVu" />
+      <Association Name="TOUR_ChiTietPhuongTien" Member="ChiTietPhuongTiens" ThisKey="MaSoTour" OtherKey="MaSoTour" Type="ChiTietPhuongTien" />
+      <Association Name="TOUR_DanhGia" Member="DanhGias" ThisKey="MaSoTour" OtherKey="MaSoTour" Type="DanhGia" />
+      <Association Name="TOUR_DiaDiemThamQuan" Member="DiaDiemThamQuans" ThisKey="MaSoTour" OtherKey="MaSoTour" Type="DiaDiemThamQuan" />
+      <Association Name="LoaiTour_TOUR" Member="LoaiTour" ThisKey="MaLoaiTour" OtherKey="MaLoaiTour" Type="LoaiTour" IsForeignKey="true" />
+      <Association Name="Tinh_TOUR" Member="Tinh" ThisKey="MaSoTinh" OtherKey="MaSoTinh" Type="Tinh" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ChiTietDichVu" Member="ChiTietDichVus">
+    <Type Name="ChiTietDichVu">
+      <Column Name="MaSoTour" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaDichVu" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DuocHuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="TOUR_ChiTietDichVu" Member="TOUR" ThisKey="MaSoTour" OtherKey="MaSoTour" Type="TOUR" IsForeignKey="true" />
+      <Association Name="DichVu_ChiTietDichVu" Member="DichVu" ThisKey="MaDichVu" OtherKey="MaDichVu" Type="DichVu" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ChiTietPhuongTien" Member="ChiTietPhuongTiens">
+    <Type Name="ChiTietPhuongTien">
+      <Column Name="MaSoTour" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaSoPhuongTien" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SucChua" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="TOUR_ChiTietPhuongTien" Member="TOUR" ThisKey="MaSoTour" OtherKey="MaSoTour" Type="TOUR" IsForeignKey="true" />
+      <Association Name="PHUONGTIEN_ChiTietPhuongTien" Member="PHUONGTIEN" ThisKey="MaSoPhuongTien" OtherKey="MaSoPhuongTien" Type="PHUONGTIEN" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ChucVu" Member="ChucVus">
+    <Type Name="ChucVu">
+      <Column Name="MaSoChucVu" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenChucVu" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="ChucVu_NhanVien" Member="NhanViens" ThisKey="MaSoChucVu" OtherKey="MaSoChucVu" Type="NhanVien" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DanhGia" Member="DanhGias">
+    <Type Name="DanhGia">
+      <Column Name="MaDanhGia" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaSoTour" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LuotYeuThich" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SoSao" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="TOUR_DanhGia" Member="TOUR" ThisKey="MaSoTour" OtherKey="MaSoTour" Type="TOUR" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DatHang" Member="DatHangs">
+    <Type Name="DatHang">
+      <Column Name="MaDatHang" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MaSoKhachHang" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NgayDat" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="TongThanhTien" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="TinhTrang" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GhiChu" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="DatHang_ChiTietDatHang" Member="ChiTietDatHangs" ThisKey="MaDatHang" OtherKey="MaDatHang" Type="ChiTietDatHang" />
+      <Association Name="KhachHang_DatHang" Member="KhachHang" ThisKey="MaSoKhachHang" OtherKey="MaSoKhachHang" Type="KhachHang" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DiaDiemThamQuan" Member="DiaDiemThamQuans">
+    <Type Name="DiaDiemThamQuan">
+      <Column Name="MaSoTour" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaSoDiaDiem" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenDiaDiem" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MoTaDiaDiem" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="HinhAnhDiaDiem" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Association Name="TOUR_DiaDiemThamQuan" Member="TOUR" ThisKey="MaSoTour" OtherKey="MaSoTour" Type="TOUR" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DichVu" Member="DichVus">
+    <Type Name="DichVu">
+      <Column Name="MaDichVu" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenDichVu" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="DichVu_ChiTietDichVu" Member="ChiTietDichVus" ThisKey="MaDichVu" OtherKey="MaDichVu" Type="ChiTietDichVu" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KhachHang" Member="KhachHangs">
+    <Type Name="KhachHang">
+      <Column Name="MaSoKhachHang" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenKhachHang" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GioiTinh" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="CMND" Type="System.String" DbType="NChar(15)" CanBeNull="true" />
+      <Column Name="DiaChi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SDT" Type="System.String" DbType="NChar(15)" CanBeNull="true" />
+      <Column Name="MaQuocGia" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="KhachHang_DatHang" Member="DatHangs" ThisKey="MaSoKhachHang" OtherKey="MaSoKhachHang" Type="DatHang" />
+      <Association Name="KhachHang_TaiKhoan" Member="TaiKhoans" ThisKey="MaSoKhachHang" OtherKey="MaSo" Type="TaiKhoan" />
+      <Association Name="QuocTich_KhachHang" Member="QuocTich" ThisKey="MaQuocGia" OtherKey="MaQuocGia" Type="QuocTich" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LoaiTaiKhoan" Member="LoaiTaiKhoans">
+    <Type Name="LoaiTaiKhoan">
+      <Column Name="MaLoaiTaiKhoan" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenLoaiTaiKhoan" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="LoaiTaiKhoan_TaiKhoan" Member="TaiKhoans" ThisKey="MaLoaiTaiKhoan" OtherKey="MaLoaiTaiKhoan" Type="TaiKhoan" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LoaiTour" Member="LoaiTours">
+    <Type Name="LoaiTour">
+      <Column Name="MaLoaiTour" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenLoai" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="LoaiTour_TOUR" Member="TOURs" ThisKey="MaLoaiTour" OtherKey="MaLoaiTour" Type="TOUR" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NhanVien" Member="NhanViens">
+    <Type Name="NhanVien">
+      <Column Name="MaSoNhanVien" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenNhanVien" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NgaySinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="GioiTinh" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
+      <Column Name="DiaChi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SoDienThoai" Type="System.String" DbType="Char(15)" CanBeNull="true" />
+      <Column Name="MaSoChucVu" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="NhanVien_TaiKhoan" Member="TaiKhoans" ThisKey="MaSoNhanVien" OtherKey="MaSoNV" Type="TaiKhoan" />
+      <Association Name="ChucVu_NhanVien" Member="ChucVu" ThisKey="MaSoChucVu" OtherKey="MaSoChucVu" Type="ChucVu" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PHUONGTIEN" Member="PHUONGTIENs">
+    <Type Name="PHUONGTIEN">
+      <Column Name="MaSoPhuongTien" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenPhuongTien" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LoaiPhuongTien" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Association Name="PHUONGTIEN_ChiTietPhuongTien" Member="ChiTietPhuongTiens" ThisKey="MaSoPhuongTien" OtherKey="MaSoPhuongTien" Type="ChiTietPhuongTien" />
+    </Type>
+  </Table>
+  <Table Name="dbo.QuocTich" Member="QuocTiches">
+    <Type Name="QuocTich">
+      <Column Name="MaQuocGia" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenQuocGia" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="QuocTich_KhachHang" Member="KhachHangs" ThisKey="MaQuocGia" OtherKey="MaQuocGia" Type="KhachHang" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TaiKhoan" Member="TaiKhoans">
+    <Type Name="TaiKhoan">
+      <Column Name="TenDangNhap" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaSo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaSoNV" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MatKhau" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="MaLoaiTaiKhoan" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Association Name="KhachHang_TaiKhoan" Member="KhachHang" ThisKey="MaSo" OtherKey="MaSoKhachHang" Type="KhachHang" IsForeignKey="true" />
+      <Association Name="LoaiTaiKhoan_TaiKhoan" Member="LoaiTaiKhoan" ThisKey="MaLoaiTaiKhoan" OtherKey="MaLoaiTaiKhoan" Type="LoaiTaiKhoan" IsForeignKey="true" />
+      <Association Name="NhanVien_TaiKhoan" Member="NhanVien" ThisKey="MaSoNV" OtherKey="MaSoNhanVien" Type="NhanVien" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tinh" Member="Tinhs">
+    <Type Name="Tinh">
+      <Column Name="MaSoTinh" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenTinh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Tinh_TOUR" Member="TOURs" ThisKey="MaSoTinh" OtherKey="MaSoTinh" Type="TOUR" />
+    </Type>
+  </Table>
+</Database>

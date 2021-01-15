@@ -1,0 +1,10 @@
+﻿@using QuanLyTourDuLich.Models
+@model List<TOUR>
+@{
+    ViewBag.Title = "TimKiem";
+    Layout = "~/Views/_LayoutChung.cshtml";
+}
+@Html.Action("DanhMucTimKiem", "TienIch", new { lstTour = Model });
+
+
+

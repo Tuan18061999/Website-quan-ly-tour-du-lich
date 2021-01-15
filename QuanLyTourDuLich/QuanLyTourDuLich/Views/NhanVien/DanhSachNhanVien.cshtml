@@ -1,0 +1,71 @@
+﻿@using QuanLyTourDuLich.Models
+@model List<NhanVien>
+@{
+    ViewBag.Title = "DanhSachNhanVien";
+    Layout = "~/Views/_LayoutChung.cshtml";
+    List<NhanVien> lstNhanVien = Model;
+}
+
+<div class="container">
+    <div class="row">
+        @Html.ActionLink("Thêm Nhân Viên Mới","Them","NhanVien")<br /><br />
+    </div>
+    <div class="row">
+        <div class="col-md-1">
+            <label>Mã</label>
+        </div>
+        <div class="col-md-2">
+            <label>Tên nhân viên</label>
+        </div>
+        <div class="col-md-1">
+            <label>Ngày sinh</label>
+        </div>
+        <div class="col-md-1">
+            <label>Giới tính</label>
+        </div>
+        <div class="col-md-2">
+            <label>Địa chỉ</label>
+        </div>
+        <div class="col-md-1">
+            <label>Số điện thoại</label>
+        </div>
+        <div class="col-md-2">
+            <label>Chức vụ</label>
+        </div>
+        <div class="col-md-2">
+            <label>Tùy chỉnh</label>
+        </div>
+    </div>
+    @foreach (NhanVien item in lstNhanVien)
+    {
+        <div class="row">
+            <div class="col-md-1">
+                <label>@item.MaSoNhanVien</label>
+            </div>
+            <div class="col-md-2">
+                <label>@item.TenNhanVien</label>
+            </div>
+             <div class="col-md-1">
+                <label>@String.Format("{0:dd/MM/yyyy}", item.NgaySinh)</label>
+            </div>
+            <div class="col-md-1">
+                <label>@item.GioiTinh</label>
+            </div>
+            <div class="col-md-2">
+                <label>@item.DiaChi</label>
+            </div>
+            <div class="col-md-1">
+                <label>@item.SoDienThoai</label>
+            </div>
+            <div class="col-md-2">
+                <label>@item.ChucVu.TenChucVu</label>
+            </div>
+       
+            <div class="col-md-2">
+                @Html.ActionLink("Xóa","Xoa","NhanVien", new { id = item.MaSoNhanVien }, null) |
+                @Html.ActionLink("Sửa", "Sua", "NhanVien", new { id = item.MaSoNhanVien}, null)
+            </div>
+        </div>
+    }
+</div>
+   

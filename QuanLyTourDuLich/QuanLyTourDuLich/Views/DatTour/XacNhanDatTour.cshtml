@@ -1,0 +1,43 @@
+﻿@using QuanLyTourDuLich.Models
+@model TaiKhoan
+@{
+    ViewBag.Title = "XacNhanDatTour";
+    Layout = "~/Views/_LayoutChung.cshtml";
+}
+@if(Model.MaSoNV==null)
+{
+<div style="text-align:center">
+    <form action="/DatTour/TaoDonDatTour" method="post">
+        <h2>Thông tin đặt hàng</h2>
+        <table>
+            <tr>
+                <td>Họ tên:</td><td>@Model.KhachHang.TenKhachHang</td>
+            </tr>
+            <tr>
+                <td>Địa chỉ :</td><td>@Model.KhachHang.DiaChi</td>
+            </tr>
+            <tr>
+                <td>Địa chỉ :</td><td>@Model.KhachHang.SDT</td>
+            </tr>
+            <tr>
+                <td>Ngày đặt :</td>
+                <td>@DateTime.Now.ToShortDateString()</td>
+            </tr>
+            <tr>
+                <td>Ngày giao :</td>
+                <td><input type="date" name="txtDate" /></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Đồng ý đặt hàng" /></td>
+            </tr>
+        </table>
+    </form>
+</div>
+}else{
+    <div class="container">
+        <div class="row">
+            <h4>KHÔNG THỂ ĐẶT HÀNG BẰNG TÀI KHOẢN CỦA ADMIN. VUI LÒNG ĐĂNG NHẬP BẰNG TÀI KHOẢN CỦA KHÁCH HÀNG ĐỂ THỰC HIỆN CHỨC NĂNG NÀY</h4>
+        </div>
+    </div>
+}
